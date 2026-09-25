@@ -111,13 +111,12 @@ body {
   justify-content: center;
   align-items: center;
 
-  background: linear-gradient(
-    135deg,
-    #e0e0e0 0%,
-    #e0e0e0 47%,
-    #000000 53%,
-    #000000 100%
-  );
+  background:
+    linear-gradient(rgba(0,255,255,0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0,255,255,0.08) 1px, transparent 1px),
+    radial-gradient(circle at center, #0b5fa5 0%, #02111f 100%);
+
+  background-size: 50px 50px, 50px 50px, cover;
 }
 
 .background::before,
