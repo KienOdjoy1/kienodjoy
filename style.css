@@ -2615,6 +2615,321 @@ main {
 
 }
 
+
+/* =========================================================
+   WORK EXPERIENCE
+   ========================================================= */
+
+.work-experience-section {
+    position: relative;
+    z-index: 1;
+    min-height: auto;
+    padding: 110px 7% 100px;
+    color: white;
+}
+
+.work-experience-header {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto 55px;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.work-experience-title {
+    max-width: 760px;
+}
+
+.work-experience-label {
+    display: block;
+    margin-bottom: 18px;
+
+    font-family: monospace;
+    font-size: 15px;
+    letter-spacing: 2px;
+
+    color: rgba(255,255,255,0.45);
+}
+
+.work-experience-title h2 {
+    margin: 0;
+
+    font-size: clamp(42px, 5vw, 68px);
+    line-height: 0.98;
+    letter-spacing: -3px;
+    font-weight: 700;
+
+    color: white;
+}
+
+.work-experience-title h2 strong {
+    color: transparent;
+    -webkit-text-stroke: 1px rgba(255,255,255,0.7);
+    font-weight: 700;
+}
+
+.work-experience-title p {
+    max-width: 680px;
+    margin-top: 25px;
+
+    color: rgba(255,255,255,0.58);
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+.work-experience-status {
+    min-width: 180px;
+    padding-left: 25px;
+
+    border-left: 1px solid rgba(255,255,255,0.14);
+
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.work-experience-status span {
+    font-family: monospace;
+    font-size: 10px;
+    letter-spacing: 1.5px;
+    color: rgba(255,255,255,0.35);
+}
+
+.work-experience-status strong {
+    font-size: 24px;
+    color: rgba(255,255,255,0.85);
+}
+
+.work-experience-card {
+    width: 100%;
+    max-width: 1150px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 110px 1px 1fr;
+    gap: 30px;
+
+    padding: 35px;
+
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 20px;
+
+    background:
+        linear-gradient(
+            145deg,
+            rgba(255,255,255,0.07),
+            rgba(255,255,255,0.018)
+        );
+
+    backdrop-filter: blur(16px);
+    -webkit-backdrop-filter: blur(16px);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.30),
+        inset 0 0 30px rgba(255,255,255,0.015);
+
+    transition:
+        transform 0.35s ease,
+        border-color 0.35s ease,
+        box-shadow 0.35s ease;
+}
+
+.work-experience-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(255,138,0,0.35);
+
+    box-shadow:
+        0 25px 70px rgba(0,0,0,0.38),
+        0 0 35px rgba(255,138,0,0.07);
+}
+
+.work-experience-number {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 5px;
+    padding-top: 2px;
+}
+
+.work-experience-number span {
+    font-family: monospace;
+    font-size: 15px;
+    letter-spacing: 1px;
+    color: #ff8a00;
+}
+
+.work-experience-number strong {
+    font-size: 28px;
+    line-height: 1;
+    color: rgba(255,255,255,0.9);
+}
+
+.work-experience-number small {
+    font-family: monospace;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.35);
+}
+
+.work-experience-divider {
+    width: 1px;
+    min-height: 100%;
+    background:
+        linear-gradient(
+            to bottom,
+            rgba(255,138,0,0.8),
+            rgba(255,255,255,0.10),
+            transparent
+        );
+}
+
+.work-experience-content {
+    min-width: 0;
+}
+
+.work-experience-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.work-experience-type {
+    font-family: monospace;
+    font-size: 15px;
+    letter-spacing: 1.5px;
+    color: #ff8a00;
+}
+
+.work-experience-date {
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 1px;
+    color: rgba(255,255,255,0.35);
+}
+
+.work-experience-content h3 {
+    margin-top: 12px;
+
+    font-size: clamp(27px, 3vw, 38px);
+    line-height: 1.05;
+    letter-spacing: -1.5px;
+
+    color: white;
+}
+
+.work-experience-location {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+
+    margin-top: 12px;
+
+    font-family: monospace;
+    font-size: 12px;
+    letter-spacing: 0.5px;
+    color: rgba(255,255,255,0.42);
+}
+
+.work-experience-location span {
+    color: #ff8a00;
+    font-size: 8px;
+}
+
+.work-experience-summary {
+    max-width: 800px;
+    margin-top: 22px;
+
+    color: rgba(255,255,255,0.62);
+    font-size: 13px;
+    line-height: 1.75;
+}
+
+.work-experience-grid {
+    margin-top: 28px;
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+}
+
+.work-experience-item {
+    display: grid;
+    grid-template-columns: 30px 1fr;
+    gap: 10px;
+
+    padding: 14px;
+
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 10px;
+
+    background: rgba(255,255,255,0.025);
+
+    transition:
+        border-color 0.25s ease,
+        background 0.25s ease,
+        transform 0.25s ease;
+}
+
+.work-experience-item:hover {
+    transform: translateY(-2px);
+    border-color: rgba(255,138,0,0.25);
+    background: rgba(255,138,0,0.045);
+}
+
+.work-item-number {
+    font-family: monospace;
+    font-size: 15px;
+    color: #ff8a00;
+    padding-top: 2px;
+}
+
+.work-experience-item p {
+    margin: 0;
+
+    color: rgba(255,255,255,0.60);
+    font-size: 12px;
+    line-height: 1.65;
+}
+
+.work-experience-tags {
+    margin-top: 25px;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+
+.work-experience-tags span {
+    padding: 7px 10px;
+
+    border: 1px solid rgba(255,255,255,0.10);
+    border-radius: 6px;
+
+    background: rgba(255,255,255,0.035);
+
+    font-family: monospace;
+    font-size: 8px;
+    letter-spacing: 0.8px;
+
+    color: rgba(255,255,255,0.55);
+
+    transition:
+        border-color 0.25s ease,
+        color 0.25s ease,
+        background 0.25s ease;
+}
+
+.work-experience-tags span:hover {
+    border-color: rgba(255,138,0,0.45);
+    color: #ffad42;
+    background: rgba(255,138,0,0.06);
+}
+
 /* =========================================================
    EXPERIENCE SECTION
    ========================================================= */
@@ -6190,4 +6505,132 @@ main {
     .mobile-menu-btn.active span:last-child {
         transform: translateY(-3.5px) rotate(-45deg);
     }
+}
+
+/* =========================================================
+   WORK EXPERIENCE RESPONSIVE
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+    .work-experience-section {
+        padding-left: 6%;
+        padding-right: 6%;
+    }
+
+    .work-experience-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    .work-experience-status {
+        width: 100%;
+        padding-left: 0;
+        padding-top: 15px;
+        border-left: none;
+        border-top: 1px solid rgba(255,255,255,0.14);
+    }
+
+    .work-experience-card {
+        grid-template-columns: 90px 1px 1fr;
+        gap: 20px;
+        padding: 28px;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .work-experience-card {
+        grid-template-columns: 1fr;
+        gap: 18px;
+        padding: 24px;
+    }
+
+    .work-experience-divider {
+        width: 100%;
+        height: 1px;
+        min-height: 1px;
+
+        background:
+            linear-gradient(
+                to right,
+                rgba(255,138,0,0.8),
+                rgba(255,255,255,0.08),
+                transparent
+            );
+    }
+
+    .work-experience-number {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .work-experience-number strong {
+        font-size: 24px;
+    }
+
+    .work-experience-grid {
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media (max-width: 600px) {
+
+    .work-experience-section {
+        min-height: auto;
+        padding: 90px 5% 75px;
+    }
+
+    .work-experience-label {
+        font-size: 14px;
+        letter-spacing: 1.5px;
+    }
+
+    .work-experience-title h2 {
+        font-size: clamp(40px, 11vw, 55px);
+        letter-spacing: -2px;
+    }
+
+    .work-experience-title p {
+        font-size: 13px;
+    }
+
+    .work-experience-card {
+        padding: 22px;
+        border-radius: 16px;
+    }
+
+    .work-experience-content h3 {
+        font-size: 24px;
+    }
+
+    .work-experience-summary {
+        font-size: 12px;
+    }
+
+    .work-experience-item p {
+        font-size: 11px;
+    }
+
+    .work-experience-date {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 400px) {
+
+    .work-experience-section {
+        padding-left: 5%;
+        padding-right: 5%;
+    }
+
+    .work-experience-card {
+        padding: 18px;
+    }
+
 }
