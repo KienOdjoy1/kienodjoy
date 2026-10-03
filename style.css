@@ -2693,7 +2693,7 @@ main {
 
 .work-experience-status span {
     font-family: monospace;
-    font-size: 10px;
+    font-size: 12px;
     letter-spacing: 1.5px;
     color: rgba(255,255,255,0.35);
 }
